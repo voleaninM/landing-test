@@ -1,0 +1,138 @@
+.hero {
+  position: relative;
+  z-index: 2;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  gap: 90px;
+
+  @media only screen and (max-width: $bp-medium) {
+    gap: 50px;
+  }
+  &__lines {
+    position: absolute;
+    z-index: -1;
+    top: 250px;
+    left: -240px;
+  }
+
+  &__text {
+    width: 50%;
+    color: $text-dark-grey;
+    @media only screen and (max-width: $bp-medium) {
+      width: 100%;
+    }
+    h1 {
+      font-size: 70px;
+      color: $text-red;
+      margin-bottom: 46px;
+    }
+    h3 {
+      font-size: 36px;
+    }
+  }
+  &__form {
+    position: relative;
+    color: $text-dark-grey;
+    font-size: 24px;
+    padding: 50px 50px 80px 50px;
+    background-color: white;
+    border-radius: 30px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    @media only screen and (max-width: $bp-medium) {
+      width: 100%;
+    }
+    @media only screen and (max-width: $bp-xsmall) {
+      display: none;
+    }
+
+    h2 {
+      font-size: 40px;
+      margin-bottom: 40px;
+      align-self: center;
+    }
+
+    label {
+      margin-bottom: 16px;
+    }
+    input {
+      padding: 30px 35px;
+      background-color: $text-light-blue;
+      border-radius: 16px;
+      border: none;
+      color: $text-mid-grey;
+      font-size: 24px;
+      &::placeholder {
+        color: $text-mid-grey;
+        font-size: 24px;
+      }
+      &:focus {
+        color: $text-mid-grey;
+      }
+    }
+  }
+  &__form-btn {
+    margin-top: 20px;
+    background-color: $text-mid-blue;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 32px 30px;
+    border-radius: 16px;
+    border: none;
+  }
+  &__form-input {
+    margin-bottom: 20px;
+  }
+  &__form-question {
+    margin-top: 14px;
+    font-size: 16px;
+    align-self: center;
+    color: $text-light-grey;
+  }
+  &__form-pass {
+    position: relative;
+  }
+  &__form-eye {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: 36px;
+    transform: translateY(-50%);
+  }
+  &__form-flag {
+    z-index: -1;
+    position: absolute;
+    top: -35px;
+    left: -80px;
+  }
+  &__form-pink {
+    z-index: -1;
+    position: absolute;
+    bottom: 0;
+    left: -92px;
+  }
+  &__form-hello {
+    position: absolute;
+    bottom: -20px;
+    right: -120px;
+  }
+  @media only screen and (max-width: $bp-medium) {
+    flex-direction: column;
+  }
+  &__btn {
+    width: 100%;
+    display: none;
+    margin-top: 20px;
+    background-color: $text-blue;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 32px 30px;
+    border-radius: 16px;
+    border: none;
+    @media only screen and (max-width: $bp-xsmall) {
+      display: block;
+    }
+  }
+}

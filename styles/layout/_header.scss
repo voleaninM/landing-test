@@ -1,0 +1,85 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  &__items {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 72px;
+  }
+  &__link {
+    color: $text-dark-grey;
+    text-decoration: none;
+    &:hover,
+    &.active {
+      color: $text-blue;
+      text-decoration: underline;
+    }
+  }
+  .btn-outline-primary {
+    border-color: $text-blue;
+    color: $text-blue;
+  }
+  &__languages {
+    margin-left: -22px;
+    display: flex;
+  }
+  &__language-btn {
+    border: none;
+    color: $text-dark-grey;
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    &:hover,
+    &.active {
+      color: black;
+    }
+  }
+}
+.nav-item {
+  font-size: 26px;
+}
+.nav-link.active {
+  color: $text-blue;
+}
+.btn-outline-primary {
+  font-size: 26px;
+  border-radius: 12px;
+}
+.navbar-toggler {
+  border: none;
+}
+.bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.bg-waves {
+  position: absolute;
+  top: 900px;
+  right: 0;
+}
+.bg-pink {
+  position: absolute;
+  top: 0;
+  right: 0;
+  @media only screen and (max-width: $bp-medium) {
+    display: none;
+  }
+}
+.bg-line-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  @media only screen and (max-width: $bp-medium) {
+    left: -100px;
+  }
+}

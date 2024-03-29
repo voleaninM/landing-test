@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Yellowtail&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+"
+      rel="stylesheet"
+    />
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./styles/main.scss" />
+
+    <title>Grigo</title>
+  </head>
+  <body>
+    <header>
+      <img src="/bg-pink.svg" alt="bg-pink" class="bg" />
+      <img src="/waves.svg" alt="waves" class="bg-waves" />
+      <img src="/pink-oval.svg" alt="bg-pink" class="bg-pink" />
+      <img src="/line-header.svg" alt="lines" class="bg-line-header" />
+      <nav class="navbar navbar-expand-xl wrapper">
+        <div class="navbar__items">
+          <a class="navbar__logo" href="#">
+            <img src="/logo-grigo.png" alt="grigo-logo" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav navbar__list">
+              <li class="nav-item">
+                <a class="navbar__link active" aria-current="page" href="#"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="navbar__link" href="#">Prices</a>
+              </li>
+              <li class="nav-item">
+                <a class="navbar__link" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="navbar__link" href="#">Questions</a>
+              </li>
+              <li class="nav-item">
+                <a class="navbar__link" href="#">Reviews</a>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn btn-lg btn-outline-primary">
+                  Записаться на урок
+                </button>
+              </li>
+              <li class="nav-item navbar__languages">
+                <button class="btn navbar__language-btn active">Ru/</button>
+                <button class="btn navbar__language-btn">En/</button>
+                <button class="btn navbar__language-btn">Fr</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- HERO -->
+      <section class="hero wrapper">
+        <img src="/hero-lines.svg" alt="lines" class="hero__lines" />
+        <div class="hero__text">
+          <h1>Lorem ipsum dolor sit amet, consectetur</h1>
+          <h3>Consectetur adipiscing elit integer bibendum</h3>
+        </div>
+        <div class="hero__form">
+          <img src="/flag.png" alt="flag" class="hero__form-flag" />
+          <img src="/hello.svg" alt="hello" class="hero__form-hello" />
+          <img src="/pink-hero.svg" alt="pink" class="hero__form-pink" />
+          <h2>Записаться</h2>
+          <div class="hero__form-input">
+            <label for="exampleFormControlInput1" class="form-label"
+              >Email or phone number</label
+            >
+            <input
+              type="email"
+              class="form-control"
+              id="exampleFormControlInput1"
+              placeholder="lorem@mail.com"
+            />
+          </div>
+          <div class="hero__form-input">
+            <label for="inputPassword">Password</label>
+            <div class="hero__form-pass">
+              <input
+                type="password"
+                class="form-control"
+                id="inputPassword"
+                placeholder="* * * * *"
+              />
+              <img src="/eye.svg" alt="eye" class="hero__form-eye" />
+            </div>
+          </div>
+          <button type="button" class="btn btn-primary hero__form-btn">
+            Записаться на бесплатный пробный урок
+          </button>
+          <span class="hero__form-question">Forgot your password?</span>
+        </div>
+        <button type="button" class="btn btn-primary hero__btn">
+          Записаться
+        </button>
+      </section>
+      <!-- PRICES -->
+      <section class="prices wrapper">
+        <img src="/prices-lines.svg" alt="lines" class="prices__lines" />
+        <img src="/prices-lines-2.svg" alt="lines" class="prices__lines-2" />
+        <h1 class="section-heading">Цены на обучение</h1>
+        <div class="prices__cards">
+          <div class="prices__card">
+            <img src="/prices-1.jpg" alt="woman" class="prices__card-img" />
+            <div class="prices__card-text">
+              <h4>Английский для подростков (9-12 классов)</h4>
+              <div class="prices__card-details">
+                <div class="prices__card-detail">
+                  <img src="/done.svg" alt="done" />
+                  <span> Количество студентов: 6 </span>
+                </div>
+                <div class="prices__card-detail">
+                  <img src="/done.svg" alt="done" />
+                  <span> Минут: 60</span>
+                </div>
+                <div class="prices__card-detail">
+                  <img src="/done.svg" alt="done" />
+                  <span> Уроков в неделю: 2</span>
+                </div>
+              </div>
+              <button class="btn btn-primary">8 300 Р/мес</button>
+            </div>
+          </div>
+          <div class="prices__card">
+            <img src="/prices-2.jpg" alt="woman" class="prices__card-img" />
+            <div class="prices__card-text">
+              <h4>Профессиональный английский</h4>
+              <div class="prices__card-details">
+                <div class="prices__card-detail">
+                  <img src="/done.svg" alt="done" />
+                  <span> Количество студентов: 6 </span>
+                </div>
+                <div class="prices__card-detail">
+                  <img src="/done.svg" alt="done" />
+                  <span> Минут: 60</span>
+                </div>
+                <div class="prices__card-detail">
+                  <img src="/done.svg" alt="done" />
+                  <span> Уроков в неделю: 2</span>
+                </div>
+              </div>
+              <button class="btn btn-primary blue">2 800 Р/мес</button>
+            </div>
+          </div>
+          <div class="prices__card">
+            <img src="/prices-3.jpg" alt="woman" class="prices__card-img" />
+            <div class="prices__card-text">
+              <h4>Английский для детей (1-8 классов)</h4>
+              <div class="prices__card-details">
+                <div class="prices__card-detail">
+                  <img src="/done.svg" alt="done" />
+                  <span> Количество студентов: 6 </span>
+                </div>
+                <div class="prices__card-detail">
+                  <img src="/done.svg" alt="done" />
+                  <span> Минут: 60</span>
+                </div>
+                <div class="prices__card-detail">
+                  <img src="/done.svg" alt="done" />
+                  <span> Уроков в неделю: 2</span>
+                </div>
+              </div>
+
+              <button type="button" class="btn btn-primary">7 400 Р/мес</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- REVIEWS -->
+      <section class="reviews wrapper">
+        <h2 class="section-heading">Отзывы</h2>
+
+        <section
+          id="mySlider"
+          class="splide"
+          aria-label="Splide Basic HTML Example"
+        >
+          <img src="/reviews-bg.svg" alt="bg" class="reviews__bg" />
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <div class="reviews__slide-content">
+                  <img src="/reviews-p.jpg" alt="man" class="reviews__man" />
+                  <div>
+                    <div class="reviews__person">
+                      <img
+                        src="/reviews-dots.svg"
+                        alt="dots"
+                        class="reviews__dots"
+                      />
+                      <h4>Vladimir Svetchuk</h4>
+                      <p>Student</p>
+                    </div>
+                    <p class="reviews__text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Mauris eu semper justo. Etiam venenatis cursus vulputate.
+                      Duis sollicitudin aliquam metus, vel ullamcorper arcu
+                      vulputateLorem ipsum dolor sit amet, consectetur elit.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="reviews__slide-content">
+                  <img src="/reviews-p.jpg" alt="man" class="reviews__man" />
+                  <div class="reviews__details">
+                    <div class="reviews__person">
+                      <h4>Vladimir Svetchuk2</h4>
+                      <p>Student</p>
+                    </div>
+                    <p class="reviews__text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Mauris eu semper justo. Etiam venenatis cursus vulputate.
+                      Duis sollicitudin aliquam metus, vel ullamcorper arcu
+                      vulputateLorem ipsum dolor sit amet, consectetur elit.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="reviews__slide-content">
+                  <img src="/reviews-p.jpg" alt="man" class="reviews__man" />
+                  <div class="reviews__details">
+                    <div class="reviews__person">
+                      <h4>Vladimir Svetchuk3</h4>
+                      <p>Student</p>
+                    </div>
+                    <p class="reviews__text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Mauris eu semper justo. Etiam venenatis cursus vulputate.
+                      Duis sollicitudin aliquam metus, vel ullamcorper arcu
+                      vulputateLorem ipsum dolor sit amet, consectetur elit.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </section>
+      <!-- FAQ -->
+      <section class="faq wrapper">
+        <img src="/faq-lines-1.svg" alt="lines" class="faq__lines-1" />
+        <img src="/faq-lines-2.svg" alt="lines" class="faq__lines-2" />
+        <h2 class="section-heading">Часто задаваемые вопросы</h2>
+        <div class="faq__content">
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  <img src="/faq-dot.svg" alt="dot" class="accordion-dot" />
+                  Lorem ipsum dolor sit amet, consectetur adipiscing
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse show"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <strong>This is the first item's accordion body.</strong> It
+                  is shown by default, until the collapse plugin adds the
+                  appropriate classes that we use to style each element. These
+                  classes control the overall appearance, as well as the showing
+                  and hiding via CSS transitions. You can modify any of this
+                  with custom CSS or overriding our default variables. It's also
+                  worth noting that just about any HTML can go within the
+                  <code>.accordion-body</code>, though the transition does limit
+                  overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  <img src="/faq-dot.svg" alt="dot" class="accordion-dot" />
+                  Lorem ipsum dolor sit amet, consectetur adipiscing
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <strong>This is the second item's accordion body.</strong> It
+                  is hidden by default, until the collapse plugin adds the
+                  appropriate classes that we use to style each element. These
+                  classes control the overall appearance, as well as the showing
+                  and hiding via CSS transitions. You can modify any of this
+                  with custom CSS or overriding our default variables. It's also
+                  worth noting that just about any HTML can go within the
+                  <code>.accordion-body</code>, though the transition does limit
+                  overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  <img src="/faq-dot.svg" alt="dot" class="accordion-dot" />
+                  Lorem ipsum dolor sit amet, consectetur adipiscing
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <strong>This is the third item's accordion body.</strong> It
+                  is hidden by default, until the collapse plugin adds the
+                  appropriate classes that we use to style each element. These
+                  classes control the overall appearance, as well as the showing
+                  and hiding via CSS transitions. You can modify any of this
+                  with custom CSS or overriding our default variables. It's also
+                  worth noting that just about any HTML can go within the
+                  <code>.accordion-body</code>, though the transition does limit
+                  overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour"
+                  aria-expanded="false"
+                  aria-controls="collapseFour"
+                >
+                  <img src="/faq-dot.svg" alt="dot" class="accordion-dot" />
+                  Lorem ipsum dolor sit amet, consectetur adipiscing
+                </button>
+              </h2>
+              <div
+                id="collapseFour"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <strong>This is the third item's accordion body.</strong> It
+                  is hidden by default, until the collapse plugin adds the
+                  appropriate classes that we use to style each element. These
+                  classes control the overall appearance, as well as the showing
+                  and hiding via CSS transitions. You can modify any of this
+                  with custom CSS or overriding our default variables. It's also
+                  worth noting that just about any HTML can go within the
+                  <code>.accordion-body</code>, though the transition does limit
+                  overflow.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- BLOG -->
+      <section class="blog wrapper">
+        <h2 class="section-heading">Блог</h2>
+        <div class="blog__cards">
+          <div class="blog__card">
+            <img src="/blogp-1.jpg" alt="blog-pic" />
+            <div class="blog__text">
+              <div class="blog__date">
+                <p>Новости</p>
+                <p>30.01.21</p>
+              </div>
+              <h4>Lorem Ipsum</h4>
+              <p class="blog__desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+                at nibh....
+              </p>
+            </div>
+          </div>
+          <div class="blog__card">
+            <img src="/blogp-2.jpg" alt="blog-pic" />
+            <div class="blog__text">
+              <div class="blog__date">
+                <p>Новости</p>
+                <p>30.01.21</p>
+              </div>
+              <h4>Lorem Ipsum</h4>
+              <p class="blog__desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+                at nibh....
+              </p>
+            </div>
+          </div>
+          <div class="blog__card">
+            <img src="/blogp-3.jpg" alt="blog-pic" />
+            <div class="blog__text">
+              <div class="blog__date">
+                <p>Новости</p>
+                <p>30.01.21</p>
+              </div>
+              <h4>Lorem Ipsum</h4>
+              <p class="blog__desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+                at nibh....
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- FOOTER -->
+    <footer class="footer">
+      <img src="/footer-logo.png" alt="logo" />
+      <div class="footer__text">
+        <nav>
+          <ul class="footer__nav-list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Prices</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Questions</a></li>
+            <li><a href="#">Reviews</a></li>
+            <li>
+              <button type="button" class="btn btn-lg btn-outline-primary">
+                Записаться на урок
+              </button>
+            </li>
+          </ul>
+        </nav>
+        <div class="footer__details-container">
+          <div class="footer__details">
+            <p>+373 67-74-27-77</p>
+            <p>+373 67-74-27-77</p>
+          </div>
+          <div class="footer__details">
+            <h5>Как нас найти:</h5>
+            <p>Московский проспект 18</p>
+          </div>
+        </div>
+        <img src="/footer-white.svg" alt="footer" class="footer__white-bg" />
+      </div>
+    </footer>
+    <script src="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
