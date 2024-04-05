@@ -1,5 +1,5 @@
 .reviews {
-  padding-top: 108px;
+  margin-top: 108px;
   padding-bottom: 170px;
   display: flex;
   flex-direction: column;
@@ -53,6 +53,7 @@
     right: -50px;
   }
   .splide {
+    position: relative;
     width: 100%;
     max-width: 1230px;
   }

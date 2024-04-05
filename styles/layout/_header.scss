@@ -28,6 +28,9 @@
     border-color: $text-blue;
     color: $text-blue;
   }
+  .btn-outline-primary :hover {
+    color: white;
+  }
   &__languages {
     margin-left: -22px;
     display: flex;
